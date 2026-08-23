@@ -1,0 +1,13 @@
+{
+  "itemGroup.glamour": "Example Mod Tab",
+  "block.glamour.example_block": "Example Block",
+  "item.glamour.example_item": "Example Item",
+
+  "glamour.configuration.title": "Glamour Configs",
+  "glamour.configuration.section.glamour.common.toml": "Glamour Configs",
+  "glamour.configuration.section.glamour.common.toml.title": "Glamour Configs",
+  "glamour.configuration.items": "Item List",
+  "glamour.configuration.logDirtBlock": "Log Dirt Block",
+  "glamour.configuration.magicNumberIntroduction": "Magic Number Text",
+  "glamour.configuration.magicNumber": "Magic Number"
+}
