@@ -1,7 +1,7 @@
 {
   "itemGroup.glamour": "Example Mod Tab",
   "block.glamour.example_block": "Example Block",
-  "item.glamour.example_item": "Example Item",
+  "item.glamour.kintsugium_ingot": "Kintsugium Ingot",
 
   "glamour.configuration.title": "Glamour Configs",
   "glamour.configuration.section.glamour.common.toml": "Glamour Configs",

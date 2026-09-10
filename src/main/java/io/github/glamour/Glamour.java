@@ -1,5 +1,6 @@
 package io.github.glamour;
 
+import io.github.glamour.item.GlamourItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -48,6 +49,8 @@ public class Glamour {
 
         NeoForge.EVENT_BUS.register(this);
 
+        GlamourItems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -61,6 +64,9 @@ public class Glamour {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(GlamourItems.KINTSUGIUM_INGOT);
+        }
 }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
