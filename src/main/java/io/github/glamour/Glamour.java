@@ -66,6 +66,7 @@ public class Glamour {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(GlamourItems.KINTSUGIUM_INGOT);
+            event.accept(GlamourItems.KINTSUGIUM_SWORD);
         }
 }
 

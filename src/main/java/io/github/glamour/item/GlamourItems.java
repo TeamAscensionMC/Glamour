@@ -11,6 +11,8 @@ public class GlamourItems {
 
     public static final DeferredItem<Item> KINTSUGIUM_INGOT = ITEMS.register("kintsugium_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> KINTSUGIUM_SWORD = ITEMS.register("kintsugium_sword",
+            ()-> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
