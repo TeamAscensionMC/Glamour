@@ -13,8 +13,8 @@ import org.jetbrains.annotations.Nullable;
 import java.util.concurrent.CompletableFuture;
 
 public class GlamourBlockTagProvider extends BlockTagsProvider {
-    public GlamourBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, Glamour.MODID, existingFileHelper);
+    public GlamourBlockTagProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, ExistingFileHelper existingFileHelper) {
+        super(packOutput, lookupProvider, Glamour.MODID, existingFileHelper);
     }
 
     @Override
