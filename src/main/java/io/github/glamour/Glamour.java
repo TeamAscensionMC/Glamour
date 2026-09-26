@@ -1,5 +1,6 @@
 package io.github.glamour;
 
+import io.github.glamour.block.GlamourBlocks;
 import io.github.glamour.item.GlamourItems;
 import org.slf4j.Logger;
 
@@ -50,6 +51,7 @@ public class Glamour {
         NeoForge.EVENT_BUS.register(this);
 
         GlamourItems.register(modEventBus);
+        GlamourBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -66,7 +68,13 @@ public class Glamour {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(GlamourItems.KINTSUGIUM_INGOT);
+            event.accept(GlamourItems.AGATE_SHARD);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(GlamourItems.KINTSUGIUM_SWORD);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(GlamourBlocks.AGATE_BLOCK);
         }
 }
 

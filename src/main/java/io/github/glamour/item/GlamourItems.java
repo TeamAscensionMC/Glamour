@@ -9,10 +9,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class GlamourItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Glamour.MODID);
 
+    public static final DeferredItem<Item> AGATE_SHARD = ITEMS.register("agate_shard",
+            ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> KINTSUGIUM_INGOT = ITEMS.register("kintsugium_ingot",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> KINTSUGIUM_SWORD = ITEMS.register("kintsugium_sword",
             ()-> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
